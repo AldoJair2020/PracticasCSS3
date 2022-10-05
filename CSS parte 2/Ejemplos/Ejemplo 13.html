@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<!-- Fig. 5.14 fusionarimagenes.html -->
+<!-- Fusionar una imagen en otra mediante CSS3. -->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Fusi&oacute;n de im&aacute;genes</title>
+        <style type="text/css">
+        #portada
+        {
+            position: relative;
+            margin: 0 auto;
+        }
+        #portada img
+        {
+            position: absolute;
+            left: 0;
+            -webkit-transition: opacity 4s ease-in-out;
+            transition: opacity 4s ease-in-out;
+        }
+        #portada img.top:hover
+            {opacity: 0;}
+    </style>
+</head>
+<body>
+    <a href="../../index.html">
+        <img src="imagenes/boton_regresar.png" width="150"
+        height="50" alt="bot&aacute;n de regresar">
+    </a><br>
+        
+    <div id="portada">
+        <img class="bottom" src="imagenes/jhtp.jpg" width="300" height="400" 
+            alt="Portada de un libro Java">
+        <img class="top" src="imagenes/cpphtp.jpg" width="300" height="400"
+            alt="Portada de otro libro de Java">
+    </div>  
+</body>
+</html>
